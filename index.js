@@ -1,10 +1,19 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  for (let i = 0; i < word.length / 2; i++) {
+    const j =word.length - 1 - i;
+    const startChar = word [i];
+    const endChar = word [j];
+    if (startChar !== endChar) return false;
+  }
+
+return true;
 }
 
 /* 
   Add your pseudocode here
-*/
+we will compare the first leter if is the same than the las, and the second to the second last etc.
+*/ 
 
 /*
   Add written explanation of your solution here
